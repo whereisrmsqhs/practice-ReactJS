@@ -1,0 +1,36 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul {
+  list-style: none;
+  text-align: center;
+}
+
+.title {
+  padding-left: 8px;
+}
+
+input::placeholder {
+  color: #ffd53bad;
+}
+
+.search-bar {
+  border-radius: 20px;
+  background-color: transparent;
+  color: #ffd53bad;
+
+  border-style: none;
+  border: 1px solid;
+  padding: 10px;
+}
+
+.navbar-nav-list {
+  display: flex;
+}
+
+.navbar-nav-list li {
+  padding-left: 10px;
+}
