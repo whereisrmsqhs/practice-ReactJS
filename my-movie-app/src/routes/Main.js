@@ -28,7 +28,8 @@ function Main() {
               <Movies
                 key={movie.id}
                 coverImg={movie.medium_cover_image}
-                genre={movie}
+                genre={movie.genres}
+                rating={movie.rating}
               />
             ))}
           </div>
