@@ -1,0 +1,50 @@
+$theme_color: #ffd53bad;
+
+.filter-container {
+  margin: 10px 0;
+  padding: 15px;
+  background-color: rgb(56, 55, 55);
+  text-align: center;
+
+  p {
+    font-size: 1.5rem;
+    padding-bottom: 5px;
+  }
+
+  input {
+    width: 80%;
+    margin: 15px 0;
+    border-radius: 5px;
+
+    &::placeholder {
+      text-align: center;
+    }
+  }
+
+  button {
+    @extend select;
+
+    margin-top: 10px;
+  }
+}
+
+.category {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+  margin-top: 10px;
+}
+
+select {
+  width: 130px;
+  height: 40px;
+  background-color: black;
+  color: $theme_color;
+  border: none;
+  border-radius: 5px;
+
+  option {
+    padding-left: 5px;
+  }
+}

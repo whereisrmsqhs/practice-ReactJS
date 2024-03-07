@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faClapperboard } from "@fortawesome/free-solid-svg-icons";
-import "../css/header.css";
+import "../css/header.scss";
 
 function Header() {
   return (

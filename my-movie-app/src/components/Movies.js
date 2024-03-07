@@ -1,5 +1,3 @@
-import "../css/movies_style.css";
-
 function Movies({ coverImg }) {
   return (
     <span>
