@@ -15,7 +15,6 @@ function Main() {
   useEffect(() => {
     getMovies();
   }, []);
-  console.log(movies);
   return (
     <div>
       {loading ? (
@@ -27,6 +26,7 @@ function Main() {
             {movies.map((movie) => (
               <Movies
                 key={movie.id}
+                id={movie.id}
                 coverImg={movie.medium_cover_image}
                 genre={movie.genres}
                 rating={movie.rating}

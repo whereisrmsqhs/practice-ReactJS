@@ -1,3 +1,5 @@
+$theme_color: #ffd53bad;
+
 .movie-container {
   position: relative;
 
@@ -8,8 +10,8 @@
 
   .small-info {
     position: absolute;
-    top: 30%;
-    left: 30%;
+    top: 25%;
+    left: 26%;
     text-align: center;
     color: white;
     transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
@@ -26,6 +28,24 @@
 
     button {
       margin-top: 20px;
+      padding: 10px;
+      background-color: black;
+      color: $theme_color;
+      border: none;
+      border-style: solid;
+      border-color: $theme_color;
+      border-radius: 5px;
+      cursor: pointer;
+
+      font-size: 1em;
+      font-weight: bold;
+      transition: all 0.3s;
+
+      &:hover {
+        background-color: $theme_color;
+        color: black;
+        opacity: 1;
+      }
     }
   }
 }
