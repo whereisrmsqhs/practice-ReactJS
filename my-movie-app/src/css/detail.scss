@@ -1,5 +1,14 @@
 $theme_color: #ffd53bad;
 
+a {
+  text-decoration: none;
+
+  &:link,
+  &:visited {
+    color: $theme_color;
+  }
+}
+
 .top {
   margin-bottom: 20px;
 }

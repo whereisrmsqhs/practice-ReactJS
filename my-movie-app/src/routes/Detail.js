@@ -67,19 +67,21 @@ function Detail() {
             </div>
             <h3>Top Cast</h3>
             <ul className="cast">
-              {detail.cast.map((actor) => (
-                <li className="cast-each">
-                  <a
-                    href={`https://www.imdb.com/name/nm${actor.imdb_code}/`}
-                    target="_blank"
-                  >
-                    <img src={actor.url_small_image}></img>
-                  </a>
-                  <span>
-                    {actor.name} as {actor.character_name}
-                  </span>
-                </li>
-              ))}
+              {detail.cast == null
+                ? null
+                : detail.cast.map((actor) => (
+                    <li className="cast-each">
+                      <a
+                        href={`https://www.imdb.com/name/nm${actor.imdb_code}/`}
+                        target="_blank"
+                      >
+                        <img src={actor.url_small_image}></img>
+                      </a>
+                      <span>
+                        {actor.name} as {actor.character_name}
+                      </span>
+                    </li>
+                  ))}
             </ul>
           </div>
           <div className="bottom">

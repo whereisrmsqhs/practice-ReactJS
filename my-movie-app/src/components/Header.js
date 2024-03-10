@@ -1,5 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faClapperboard } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 import "../css/header.scss";
 
 function Header() {
@@ -12,7 +13,9 @@ function Header() {
           style={{ color: "#FFD43B" }}
           bounce
         />
-        <span className="title">Nomad Movie</span>
+        <Link to={"/"}>
+          <span className="title">Nomad Movie</span>
+        </Link>
       </div>
       <input
         className="search-bar"
